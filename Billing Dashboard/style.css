@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* body{
+        background: url(Bill.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.2;
+} */
+
+body>h2{
+    display: block;
+    color:green;
+    text-align: center;
+    margin: 5px 0px 5px 0px;
+}
+
+.box-info>h2{
+    margin: 12px 0 0 15px;
+}
+.box-info>h4{
+    margin: 10px 0 10px 30px;
+}
+
+.box-time>h4{
+    margin: 8px 10px 8px 0;
+}
+
+.one{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    border: 1px solid rgb(0, 0, 0);
+    width: 99%;
+    height: 50%;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cus-input input{
+    margin: 5px;
+    width: 250px;
+    padding: 10px;
+}
+
+.cus-input{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-box{
+    width: 320px;
+    border: 1px;
+    border-right:1px solid ;
+    display: flex;
+    flex-direction: column;
+}
+
+hr{
+    margin-bottom: 1px;
+    background-color:black;
+    height:1px;
+    border: none;
+}
+
+.detail{
+    display: flex;
+}
+
+.boxbox{
+    height: 67vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.bill-one td{
+ /* padding: 5px; */
+    font-size: 18px;
+    height: 30px;
+    font-weight: bold;
+    border: 1px solid black;
+    text-align: center;
+    width: 237px;
+    background-color: rgb(34, 34, 34);
+    color: rgb(216, 216, 216);
+}
+
+.bill-one td:nth-child(1){
+    width: 70px;
+}
+
+.bill-one1 td{
+    font-size: 18px;
+    height: 30px;
+    font-weight: bold;
+    border: 1px solid black;
+    text-align: center;
+    width: 237px;
+} 
+
+.bill-one1 td:nth-child(1){
+    width: 70px;
+} 
+
+.bill-one1 td:nth-child(5){
+    width: 185px;
+} 
+.bill-one1 td:nth-child(6){
+    width: 50px;
+} 
+
+
+
+.input-box td{
+    border: 1px solid black;
+    font-size: 13px;
+    padding: 3.5px;
+    text-align: center;
+    background-color: rgb(34, 34, 34);
+    color: rgb(216, 216, 216);
+}
+
+.detail label{
+    font-style:initial;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 5px 2px 5px;
+}
+
+.detail input{
+    margin: 0px 5px 5px 5px;
+    width: 94%;
+    padding: 10px 8px 10px 8px;
+}
+
+.detail .t-box{
+    text-align: center;
+    display: flex;
+    margin: 20px 0 5px 4px;
+}
+
+.detail .to-tal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 2px;
+    height: 35px;
+    margin-left: 5px;
+}
+
+.detail .print{
+    display: flex;
+    justify-content: end;
+    margin: 25px 14px 14px 14px;
+}
+
+.print button{
+    font-size: 16px;
+    padding: 1px 5px 1px 5px;
+    margin: 0 0 0 10px;
+    cursor: pointer;
+}
+
+button i{
+    padding: 8px 15px 8px 15px;
+    cursor: pointer;
+}
+
+td button{
+    background-color: transparent;
+    border: none;
+}
+
+td button:active{
+    transform: scale(120%);
+}
+
+.print button:active{
+    transform: scale(110%);
+}
+
+
+ @media print and (orientation:portrait){
+
+    .input-box{
+        display: none;
+    }
+
+    button{
+        display: none;
+    }
+
+    .bill-one{
+        margin: 0px 3px 0px 3px;
+    }
+
+    .bill-one1{
+        margin: 0px 3px 0px 3px;
+    }
+
+    .bill-one1 td:nth-child(1){
+        width: 57px;
+    }
+
+    .bill-one1 td:nth-child(2){
+        width: 163.7px;
+    }
+
+    .bill-one1 td:nth-child(3){
+        width: 171px;
+    }
+
+    .bill-one1 td:nth-child(4){
+        width: 161px;
+    }
+
+    .bill-one1 td:nth-child(5){
+        width: 160px;
+    }
+
+    .bill-one1 td:nth-child(6){
+        display: none;
+    }
+
+    .cus-input{
+        display: none;
+    }
+
+    .boxbox{
+    overflow-y: hidden;
+    }
+
+    .bill-one td{
+        margin-top: 10px;
+        color: black;
+    }
+
+    .boxbox{
+        height: fit-content;
+    }
+
+    .t-box{
+        display: block;
+        
+        
+    }
+    .bill-box1{
+        margin-bottom: 10px;
+    }
+ }
+
